@@ -8,6 +8,12 @@ L'obiettivo principale di questo progetto è stato quello di familiarizzare con 
 
 ---
 
+## Live Demo 🚀✨
+Puoi provare "The Space Counter" live qui:
+👉 **[The Space Counter su Netlify](https://thespacecounter.netlify.app/)** 👈
+
+---
+
 ## Tecnologie Utilizzate 🛠️
 
 * **HTML5:** Per la struttura semantica della pagina.
@@ -49,4 +55,5 @@ L'intero script è racchiuso in un event listener `DOMContentLoaded` per assicur
     * Salva il `counterValue` corrente nel `localStorage` per la persistenza.
 
 ---
+
 
