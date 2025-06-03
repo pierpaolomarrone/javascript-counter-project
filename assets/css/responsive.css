@@ -1,0 +1,26 @@
+/* MEDIA QUERIES*/
+
+/* TABLET */
+@media (min-width: 591px) and(max-width: 768px) {
+    .main-title {
+        font-size: 4.2em!important; 
+    }
+
+    #app {
+        width: 320px!important;
+        max-width: calc(100% - 80px)!important;
+    }
+}
+
+/* MOBILE */
+@media (min-width: 370px) and (max-width: 590px) {
+    .main-title {
+        font-size: 3.5em!important;
+    }
+
+    #app {
+        width: calc(100% - 80px)!important;
+        width: 260px !important;
+        max-width: none;
+    }
+}

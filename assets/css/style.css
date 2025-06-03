@@ -1,0 +1,148 @@
+/* collegamento al responsive.css per i media queries */
+@import url(responsive.css);
+
+body {
+  box-sizing: border-box;
+  background-image: url(../img/blue-space.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; 
+}
+
+/* H1 */
+.main-title {
+  font-size: 5.5em; 
+  color: #00ffff; 
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.5); 
+  margin-bottom:40px;
+  text-align: center; 
+  padding: 0 10px; 
+}
+
+/* CONTATORE */
+#app {
+  background-color: rgba(30, 30, 50, 0.9); 
+  padding: 40px 50px;
+  margin: 40px auto;
+  width: 400px;
+  max-width: calc(100% - 80px); 
+  border-radius: 15px; 
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid rgba(0, 255, 255, 0.3); 
+}
+
+.counter-display {
+  font-size: 5.0em; 
+  font-weight: 700; 
+  margin-bottom: 25px;
+  color: #00ffff; 
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8); 
+}
+
+/* BOTTONI + E - */
+.buttons-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #1a1a3a; 
+  color: #00ffff; 
+  border: 2px solid #00ffff; 
+  padding: 18px 35px; 
+  font-size: 1.8em; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 90px; 
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); 
+}
+
+button:hover {
+  background-color: #00ffff; 
+  color: #1a1a3a; 
+  border-color: #1a1a3a; 
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+button:active {
+  background-color: #00ccdd; 
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); 
+}
+
+/* PULSANTE RESET */
+#resetBtn {
+  background-color: #4a1a1a; 
+  color: #ff6666; 
+  border: 2px solid #ff6666; 
+  padding: 12px 25px;
+  font-size: 1.4em;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); 
+}
+
+#resetBtn:hover {
+  background-color: #ff6666; 
+  color: #4a1a1a; 
+  border-color: #4a1a1a;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); 
+}
+
+#resetBtn:active {
+  background-color: #dd5555;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* TASTO CAMBIA COLORE CONTATORE */
+.settings-container {
+  margin-top: 30px; 
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 255, 255, 0.2); 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.settings-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #e0e0e0; 
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5); 
+}
+
+.settings-container input[type="color"] {
+  width: 120px; 
+  height: 50px; 
+  border: 2px solid #00ffff; 
+  padding: 3px; 
+  cursor: pointer;
+  border-radius: 8px;
+  vertical-align: middle;
+  background-color: #2a2a4a; 
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); 
+  outline: none; 
+}
+
+.settings-container input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.settings-container input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 5px; 
+}
